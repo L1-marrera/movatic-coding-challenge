@@ -88,5 +88,7 @@ def information(station_name):
     except Exception as e:
         return "An error occurred: " + str(e)
 
+app.run( host='0.0.0.0', port=5000 )
+
 if __name__ == "__main__":
     app.run(debug=True)
