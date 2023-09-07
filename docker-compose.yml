@@ -1,0 +1,18 @@
+version: '3'
+services:
+  flask_app:
+    build:
+      context: ./coding-challenge/backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./shared:/app/shared
+
+
+  react_app:
+    build:
+      context: ./coding-challenge   # Adjust the context to your React app's directory
+    ports:
+      - "3000:3000"
+    depends_on:
+      - flask_app
