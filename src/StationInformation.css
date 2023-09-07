@@ -1,0 +1,88 @@
+/* You can include this in a separate CSS file or use a CSS-in-JS solution like styled-components */
+
+/* Apply a bit of styling to the entire container */
+.StationInformation-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    /* padding: 20px; */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the headers */
+  .StationInformation-header {
+    margin: 0;
+    background-color: #aebab1;
+    font-size: 24px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .StationInformation-menu {
+    display: flex;
+    flex-direction: row;
+    margin: 0 18px 0 18px;
+  }
+  
+  .StationInformation-menu button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #50879c;
+    color: #fff;
+    border: solid;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .StationInformation-menu button:hover {
+    background-color: #0056b3;
+  }
+  
+  .StationInformation-header--id {
+    flex: 1;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  .StationInformation-bodyContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 18px;
+    padding: 18px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .StationInformation-bodyContainer p:first-child {
+    font-weight: bold;
+  }
+  
+  .StationInformation-bodyContainer p:nth-child(2) {
+    padding-left: 30px;
+  }
+  
+  .StationInformation-bodyContainer:last-child {
+    margin-bottom: 36px;
+  }
+  
+  p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  /* Style the error message */
+  p.error {
+    color: red;
+    font-weight: bold;
+  }

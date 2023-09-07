@@ -1,3 +1,4 @@
+import './StatusTable.css'
 
 function StatusTable({ statusJson, onRowClick }) {
 

@@ -1,5 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import React, { useEffect, useState } from 'react';
+import './StationInformation.css';
 
 function StationInformation({ selectedRow }) {
     const { id } = useParams();
@@ -28,43 +29,43 @@ function StationInformation({ selectedRow }) {
     // station_information && console.log(station_information[0]);
 
     return (
-        <div >
-            <h2 >Coding Challenge</h2>
+        <div className="StationInformation-container">
+            <h2 className="StationInformation-header">Coding Challenge</h2>
             {error && <p>Error: {error}</p>}
-            <div >
-                <h3>Station ID: {id}</h3>
+            <div className="StationInformation-menu">
+                <h3 className="StationInformation-header--id">Station ID: {id}</h3>
             </div>
-            <div >
+            <div className="StationInformation-bodyContainer">
                 <p>Name:</p>
                 {station_information && (
                     <p>{station_information[0].name}</p>
                 )}
             </div>
-            <div >
+            <div  className="StationInformation-bodyContainer">
                 <p>Address:</p>
                 {station_information && (
                     <p>{station_information[0].address}</p>
                 )}
             </div>
-            <div >
+            <div  className="StationInformation-bodyContainer">
                 <p>Region:</p>
                 {station_information && (
                     <p>{station_information[0].region_id}</p>
                 )}
             </div>
-            <div >
+            <div  className="StationInformation-bodyContainer">
                 <p>Station Type:</p>
                 {station_information && (
                     <p>{station_information[0]._bcycle_station_type}</p>
                 )}
             </div>
-            <div >
+            <div  className="StationInformation-bodyContainer">
                 <p>Longitude:</p>
                 {station_information && (
                     <p>{station_information[0].lon}</p>
                 )}
             </div>
-            <div >
+            <div  className="StationInformation-bodyContainer">
                 <p>Latitude:</p>
                 {station_information && (
                     <p>{station_information[0].lat}</p>

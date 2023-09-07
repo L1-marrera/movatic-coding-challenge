@@ -1,0 +1,63 @@
+.StatusTable-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    /* padding: 20px; */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Table container */
+.table-container {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Table header */
+.table-header {
+    background-color: #aebab1;
+    /* Header background color */
+    color: #fff;
+    /* Header text color */
+}
+
+/* Table header cells */
+.table-header th {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Table body */
+.table-body {
+    background-color: #f7f7f7;
+    /* Body background color */
+}
+
+/* Table body rows */
+.table-body tr:nth-child(even) {
+    background-color: #ddd;
+    /* Even row background color */
+}
+
+.table-body tr:hover {
+    background-color: #50879c;
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+}
+
+/* Table body cells */
+.table-body td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Highlighted row - change the background color for a selected row */
+.table-body tr.selected {
+    background-color: #50879c;
+    /* Highlighted row background color */
+    color: #fff;
+    /* Highlighted row text color */
+}
