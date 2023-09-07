@@ -30,5 +30,25 @@ def gbfs():
     except Exception as e:
         return "An error occurred: " + str(e)
 
+@app.route('/station_status', methods=['GET'])
+def station_status():
+    try:
+        # Make an HTTP GET request to the URL
+        response = requests.get("https://gbfs.bcycle.com/bcycle_madison/station_status.json")
+
+        # Check if the request was successful (status code 200)
+        if response.status_code == 200:
+            # Parse the JSON response
+            data = response.json()
+
+            # Return the JSON data as a response
+            return jsonify(data)
+
+        else:
+            return "Failed to fetch JSON data. Status code: " + str(response.status_code)
+
+    except Exception as e:
+        return "An error occurred: " + str(e)  
+
 if __name__ == "__main__":
     app.run(debug=True)
