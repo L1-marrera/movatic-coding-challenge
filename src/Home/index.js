@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { StationTable } from './StationTable';
-import { StatusTable } from './StatusTable';
-import { StationInformation } from "./StationInformation";
+import { StationTable } from '../StationTable';
+import { StatusTable } from '../StatusTable';
+import { StationInformation } from "../StationInformation";
 import './Home.css'
 
 function Home() {
