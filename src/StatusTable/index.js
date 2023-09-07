@@ -20,8 +20,8 @@ function StatusTable({ statusJson, onRowClick }) {
                             <tr key={item.station_id} onClick={() => onRowClick(item)}>
                                 <td>{item.station_id}</td>
                                 <td>{item.num_docks_available}</td>
-                                <td>{item.is_installed}</td>
-                                <td>{item.is_renting}</td>
+                                <td>{item.is_installed === 1? 'yes' : 'no'}</td>
+                                <td>{item.is_renting === 1? 'yes' : 'no'}</td>
                                 <td>{item.num_bikes_available}</td>
                             </tr>
                         ))}
